@@ -23,10 +23,43 @@ function oklahoma(){
 }
 
 
+function original(){
+    let original = prompt ("Hamburguesa Original $11000 \n Doble Medallón de Carne, Cheddar, Lechuga, Tomate y Mayonesa CNB. Acompañada de papas fritas y salsa extra a elección. \n ¿Cuantas desea?")
+    let resultado = original * 11000
+    let confirmacion = prompt ("Perfecto, desea algo mas? Si/No")
+    if(confirmacion == "no"){
+        alert("Muchas gracias, el total del pedido es $"+resultado)
+    }
+}
+
+function cheesenBurger(){
+    let cheesenBurger = prompt ("Hamburguesa Cheesen Burger $13000 \n Triple Medallón de Carne, Cheddar, Mozzarella, y Barbacoa CNB. Acompañada de papas fritas y salsa extra a elección. \n ¿Cuantas desea?")
+    let resultado = cheesenBurger * 13000
+    let confirmacion = prompt ("Perfecto, desea algo mas? Si/No")
+    if(confirmacion == "no"){
+        alert("Muchas gracias, el total del pedido es $"+resultado)
+    }
+}
 
 
+function butterBurger(){
+    let butterBurger = prompt ("Hamburguesa Butter Burger $11000 \n Doble Medallón de Carne, Manteca, Cebolla estofada y Cheddar. Acompañada de papas fritas y salsa extra a elección. \n ¿Cuantas desea?")
+    let resultado = butterBurger * 11000
+    let confirmacion = prompt ("Perfecto, desea algo mas? Si/No")
+    if(confirmacion == "no"){
+        alert("Muchas gracias, el total del pedido es $"+resultado)
+    }
+}
 
 
+function yanquiCrispy(){
+    let yanquiCrispy = prompt ("Hamburguesa Yanqui Crispy $11000 \n Doble Medallón de Carne, Applewood Bacon, Cheddar, Cebolla Crispy y Mayonesa CNB. Acompañada de papas fritas y salsa extra a elección. \n ¿Cuantas desea?")
+    let resultado = yanquiCrispy * 11000
+    let confirmacion = prompt ("Perfecto, desea algo mas? Si/No")
+    if(confirmacion == "no"){
+        alert("Muchas gracias, el total del pedido es $"+resultado)
+    }
+}
 
 
 
@@ -53,7 +86,7 @@ while (opcion !== 6) {
         default:
             alert("Opción incorrecta, intenta de nuevo.");
     }
-    opcion = parseInt(prompt("Elija una opción: \n 1- Convertir pesos a dólares \n 2- Convertir pesos a euros \n 3- Convertir pesos a reales \n 4- Butter Burger \n 5- Yanqui Crispy \n 6- Salir"));
+    opcion = parseInt(prompt("Elija una opción: \n 1- Oklahoma \n 2- Original \n 3- Cheesen Burger \n 4- Butter Burger \n 5- Yanqui Crispy \n 6- Salir"));
 }
 
 alert("Finalizando programa, gracias por utilizar nuestro servicio.");
