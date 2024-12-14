@@ -11,7 +11,7 @@ if (entrega == "1") {
 
 // Funciones para los acompañantes
 function papasNormales() {
-    alert("Ha seleccionado Papas Fritas Normales.");
+    alert("rocio te amo.");
 }
 
 function papasGrandes() {
