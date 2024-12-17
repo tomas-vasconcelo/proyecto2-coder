@@ -9,83 +9,87 @@ if (entrega == "1") {
     alert("Opción inválida, el programa continuará con el menú.");
 }
 
-// Funciones para los acompañantes
+// FUNCIONES PARA LOS ACOMPAÑANTES
 function papasNormales() {
-    alert("Ha seleccionado Papas Fritas Normales.");
-}
-
-function papasGrandes() {
-    alert("Ha seleccionado Papas Fritas Grandes.");
-}
-
-function papasCheddar() {
-    alert("Ha seleccionado Papas con Cheddar y Bacon.");
-}
-
-function arosCebolla() {
-    alert("Ha seleccionado Aros de Cebolla.");
-}
-
-// Función para las gaseosas
-function menuGaseosas() {
-    alert("Ha seleccionado el menú de gaseosas.");
-}
-
-// Función para el menú de acompañantes
-function menuAcompaniante() {
-    let menuAcompaniante = parseInt(
-        prompt(
-            "Elija su opción: \n" +
-            "1- Papas fritas normales \n" +
-            "2- Papas fritas grandes \n" +
-            "3- Papas fritas con cheddar y bacon \n" +
-            "4- Aros de cebolla \n" +
-            "5- Volver atrás \n" +
-            "6- Salir."
-        )
-    );
-
-    while (menuAcompaniante !== 6) {
-        switch (menuAcompaniante) {
-            case 1:
-                papasNormales();
-                break;
-            case 2:
-                papasGrandes();
-                break;
-            case 3:
-                papasCheddar();
-                break;
-            case 4:
-                arosCebolla();
-                break;
-            case 5:
-                return; // Volver al menú principal
-            default:
-                alert("Opción incorrecta, intenta de nuevo.");
-        }
-        menuAcompaniante = parseInt(
-            prompt(
-                "Elija su opción: \n" +
-                "1- Papas fritas normales \n" +
-                "2- Papas fritas grandes \n" +
-                "3- Papas fritas con cheddar y bacon \n" +
-                "4- Aros de cebolla \n" +
-                "5- Volver atrás \n" +
-                "6- Salir."
-            )
-        );
+    let papasNormales = prompt("Porcion de papas fritas Normales $4000 \n ¿Cuántas desea?");
+    let resultado = papasNormales * 4000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
     }
 }
 
+function papasGrandes() {
+    let papasGrandes = prompt("Porcion de papas fritas grandes $5000 \n ¿Cuántas desea?");
+    let resultado = papasGrandes * 5000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+function papasCheddar() {
+    let papasCheddar = prompt("Porcion de papas fritas con cheddar y bacon $6000 \n ¿Cuántas desea?");
+    let resultado = papasCheddar * 6000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+function arosCebolla() {
+    let arosCebolla = prompt("Porcion de aros de cebolla $4500 \n ¿Cuántos desea?");
+    let resultado = arosCebolla * 4500;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+// FUNCIONES PARA LAS GASEOSAS 
+
+function cocaCola() {
+    let cocaCola = prompt("Bebida Coca Cola 2L $3000 \n ¿Cuántas desea?");
+    let resultado = cocaCola * 3000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+function sprite() {
+    let sprite = prompt("Bebida Sprite 2L $3000 \n ¿Cuántas desea?");
+    let resultado = sprite * 3000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+
+function fanta() {
+    let fanta = prompt("Bebida Fanta naranja 2L $3000 \n ¿Cuántas desea?");
+    let resultado = fanta * 3000;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+function cerveza() {
+    let cerveza = prompt("Cerveza Heinken 1L $1800 \n ¿Cuántas desea?");
+    let resultado = cerveza * 1800;
+    let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
+    if (confirmacion == "no") {
+        alert("Muchas gracias, el total del pedido es $" + resultado);
+    }
+}
+
+
+
 // Funciones específicas para hamburguesas
 function oklahoma() {
-    let oklahoma = prompt(
-        "Hamburguesa Oklahoma $10500 \n" +
-        "Doble Medallón de Carne Estilo Oklahoma (Cebolla a la Plancha) y Cheddar. \n" +
-        "Acompañada de papas fritas y salsa extra a elección. \n" +
-        "¿Cuántas desea?"
-    );
+    let oklahoma = prompt("Hamburguesa Oklahoma $10500 \n Doble Medallón de Carne Estilo Oklahoma (Cebolla a la Plancha) y Cheddar. \n Acompañada de papas fritas y salsa extra a elección. \n ¿Cuántas desea?");
     let resultado = oklahoma * 10500;
     let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
     if (confirmacion == "no") {
@@ -94,12 +98,7 @@ function oklahoma() {
 }
 
 function original() {
-    let original = prompt(
-        "Hamburguesa Original $11000 \n" +
-        "Doble Medallón de Carne, Cheddar, Lechuga, Tomate y Mayonesa CNB. \n" +
-        "Acompañada de papas fritas y salsa extra a elección. \n" +
-        "¿Cuántas desea?"
-    );
+    let original = prompt("Hamburguesa Original $11000 \n Doble Medallón de Carne, Cheddar, Lechuga, Tomate y Mayonesa CNB. \n Acompañada de papas fritas y salsa extra a elección. \n ¿Cuántas desea?");
     let resultado = original * 11000;
     let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
     if (confirmacion == "no") {
@@ -108,12 +107,7 @@ function original() {
 }
 
 function cheesenBurger() {
-    let cheesenBurger = prompt(
-        "Hamburguesa Cheesen Burger $13000 \n" +
-        "Triple Medallón de Carne, Cheddar, Mozzarella, y Barbacoa CNB. \n" +
-        "Acompañada de papas fritas y salsa extra a elección. \n" +
-        "¿Cuántas desea?"
-    );
+    let cheesenBurger = prompt("Hamburguesa Cheesen Burger $13000 \n Triple Medallón de Carne, Cheddar, Mozzarella, y Barbacoa CNB. \n Acompañada de papas fritas y salsa extra a elección. \n ¿Cuántas desea?");
     let resultado = cheesenBurger * 13000;
     let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
     if (confirmacion == "no") {
@@ -122,12 +116,7 @@ function cheesenBurger() {
 }
 
 function butterBurger() {
-    let butterBurger = prompt(
-        "Hamburguesa Butter Burger $11000 \n" +
-        "Doble Medallón de Carne, Manteca, Cebolla Estofada y Cheddar. \n" +
-        "Acompañada de papas fritas y salsa extra a elección. \n" +
-        "¿Cuántas desea?"
-    );
+    let butterBurger = prompt("Hamburguesa Butter Burger $11000 \n Doble Medallón de Carne, Manteca, Cebolla Estofada y Cheddar. \n Acompañada de papas fritas y salsa extra a elección. \n ¿Cuántas desea?");
     let resultado = butterBurger * 11000;
     let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
     if (confirmacion == "no") {
@@ -136,12 +125,7 @@ function butterBurger() {
 }
 
 function yanquiCrispy() {
-    let yanquiCrispy = prompt(
-        "Hamburguesa Yanqui Crispy $11000 \n" +
-        "Doble Medallón de Carne, Applewood Bacon, Cheddar, Cebolla Crispy y Mayonesa CNB. \n" +
-        "Acompañada de papas fritas y salsa extra a elección. \n" +
-        "¿Cuántas desea?"
-    );
+    let yanquiCrispy = prompt("Hamburguesa Yanqui Crispy $11000 \n Doble Medallón de Carne, Applewood Bacon, Cheddar, Cebolla Crispy y Mayonesa CNB. \n Acompañada de papas fritas y salsa extra a elección. \n ¿Cuántas desea?");
     let resultado = yanquiCrispy * 11000;
     let confirmacion = prompt("Perfecto, ¿desea algo más? Si/No");
     if (confirmacion == "no") {
@@ -149,20 +133,63 @@ function yanquiCrispy() {
     }
 }
 
+// FUNCION PARA EL MENU DE GASEOSAS
+function menuGaseosas() {
+    let menuGaseosas= parseInt(prompt("Elija su opción: \n 1- Coca cola \n 2- Sprite \n 3- Fanta \n 4- Cerveza \n 5- Volver atras \n 6- Salir"))
+    while (menuGaseosas !== 6) {
+        switch (menuGaseosas) {
+            case 1:
+                cocaCola();
+                break;
+            case 2:
+                sprite();
+                break;
+            case 3:
+                fanta();
+                break;
+            case 4:
+                cerveza();
+                break;
+            case 5:
+                return; // Volver al menú principal
+            default:
+                alert("Opción incorrecta, intenta de nuevo.");
+        }
+        menuAcompaniante = parseInt(prompt("Elija su opción: \n 1- Coca cola \n 2- Sprite \n 3- Fanta \n 4- Cerveza \n 5- Volver atras \n 6- Salir"));
+    }
+}
+// FUNCION PARA EL MENU ACOMPAÑANTE
+function menuAcompaniante() {
+    let menuAcompaniante = parseInt(prompt("Elija su opción: \n 1- Papas fritas normales \n 2- Papas fritas grandes \n 3- Papas fritas con cheddar y bacon \n 4- Aros de cebolla \n 5- Volver atrás \n 6- Salir."));
+    while (menuAcompaniante !== 6) {
+        switch (menuAcompaniante) {
+            case 1:
+                papasNormales();
+                break;
+                case 2:
+                    papasGrandes();
+                    break;
+                    case 3:
+                        papasCheddar();
+                        break;
+                        case 4:
+                            arosCebolla();
+                            break;
+                            case 5:
+                return; // Volver al menú principal
+            default:
+                alert("Opción incorrecta, intenta de nuevo.");
+        }
+        menuAcompaniante = parseInt(prompt("Elija su opción: \n 1- Papas fritas normales \n 2- Papas fritas grandes \n 3- Papas fritas con cheddar y bacon \n 4- Aros de cebolla \n 5- Volver atrás \n 6- Salir"));
+    }
+}
+
+
+
 // Menú de hamburguesas
 function menuHamburguesas() {
     let opcion = parseInt(
-        prompt(
-            "Elija una opción: \n" +
-            "1- Oklahoma ($10500) \n" +
-            "2- Original ($11000) \n" +
-            "3- Cheesen Burger ($13000) \n" +
-            "4- Butter Burger ($11000) \n" +
-            "5- Yanqui Crispy ($11000) \n" +
-            "6- Salir"
-        )
-    );
-
+        prompt("Elija una opción: \n 1- Oklahoma ($10500) \n 2- Original ($11000) \n 3- Cheesen Burger ($13000) \n 4- Butter Burger ($11000) \n 5- Yanqui Crispy ($11000) \n 6- Salir"));
     while (opcion !== 6) {
         switch (opcion) {
             case 1:
@@ -183,33 +210,16 @@ function menuHamburguesas() {
             default:
                 alert("Opción incorrecta, intenta de nuevo.");
         }
-        opcion = parseInt(
-            prompt(
-                "Elija una opción: \n" +
-                "1- Oklahoma ($10500) \n" +
-                "2- Original ($11000) \n" +
-                "3- Cheesen Burger ($13000) \n" +
-                "4- Butter Burger ($11000) \n" +
-                "5- Yanqui Crispy ($11000) \n" +
-                "6- Salir"
-            )
-        );
+        opcion = parseInt(prompt("Elija una opción: \n 1- Oklahoma ($10500) \n 2- Original ($11000) \n 3- Cheesen Burger ($13000) \n 4- Butter Burger ($11000) \n 5- Yanqui Crispy ($11000) \n 6- Salir"));
     }
     alert("Gracias por su pedido.");
 }
 
+
+
 // Menú principal
 function menuPrincipal() {
-    let menu = parseInt(
-        prompt(
-            "Elija una opción: \n" +
-            "1- Hamburguesas \n" +
-            "2- Acompañantes \n" +
-            "3- Gaseosas \n" +
-            "4- Salir"
-        )
-    );
-
+    let menu = parseInt(prompt("Elija una opción: \n 1- Hamburguesas \n 2- Acompañantes \n 3- Gaseosas \n 4- Salir"));
     while (menu !== 4) {
         switch (menu) {
             case 1:
@@ -224,15 +234,7 @@ function menuPrincipal() {
             default:
                 alert("Opción incorrecta, intenta de nuevo.");
         }
-        menu = parseInt(
-            prompt(
-                "Elija una opción: \n" +
-                "1- Hamburguesas \n" +
-                "2- Acompañantes \n" +
-                "3- Gaseosas \n" +
-                "4- Salir"
-            )
-        );
+        menu = parseInt(prompt("Elija una opción: \n 1- Hamburguesas \n 2- Acompañantes \n 3- Gaseosas \n 4- Salir"));
     }
     alert("Gracias por utilizar nuestro servicio.");
 }
